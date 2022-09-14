@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import ProductDetail from './ProductDetail/ProductDetail';
 import Product from './Product/Product';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCarSide, faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 function App() {
     return (
         <div className="root">
@@ -10,15 +12,15 @@ function App() {
                 <form className="search-product">
                     <input type="text" placeholder="Hôm nay bạn muốn mua gì ?" />
                     <button type="submit">
-                        <i className="fa-solid fa-magnifying-glass"></i>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </button>
                 </form>
                 <a className="kt-dh" href="#">
-                    <i className="fa-regular fa-car-side"></i>
+                    <FontAwesomeIcon icon={faCarSide} />
                     <span>Kiểm tra đơn hàng</span>
                 </a>
                 <a className="card">
-                    <i className="fa-light fa-cart-shopping"></i>
+                    <FontAwesomeIcon icon={faCartShopping} />
                     <span className="angle"></span>
                     <span className="number-product">0</span>
                 </a>
