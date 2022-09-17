@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import { faMagnifyingGlass, faCartShopping, faCarSide } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 import styles from './Header.module.css';
 
@@ -20,11 +21,11 @@ function Header() {
                 <FontAwesomeIcon icon={faCarSide} />
                 <span>Kiểm tra đơn hàng</span>
             </a>
-            <a className={cx('card-shopping')}>
+            <Link to="/card/1" className={cx('card-shopping')}>
                 <FontAwesomeIcon icon={faCartShopping} />
                 <span className={cx('angle')}></span>
                 <span className={cx('number-product')}>0</span>
-            </a>
+            </Link>
             <div className={cx('root')}></div>
         </header>
     );
