@@ -1,0 +1,33 @@
+.cardProduct{
+        width: 230px;
+        height: 350px;
+        border-radius: 10px;
+        margin: 5px;
+        display: inline-block;
+        list-style: none;
+        box-shadow: 0 4px 6px #00000029;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding:0 10px ;
+}
+.btCP{
+    text-align: center;
+    margin-top: 10px;
+
+}
+.infor{
+    font-weight: bolder;
+    font-size: 14px;
+}
+.price{
+    color: #fd475a;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.imgProduct{
+    width: 150px;
+    margin: 30px auto 0 auto;
+    display: block;
+
+}

@@ -1,22 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Combo&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
-*{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:13px;
-}
-a{
-    text-decoration: none;
-}
-html{
-    margin: 0;
-    padding:0;
-    background-color: #f4f4f4;
-}
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}/* }
+    padding: 20px 0;
+}
 .logo{
     color: #00483d;
     font-family: 'Combo';
@@ -45,20 +33,23 @@ header{
     
 }
 .search-product button {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 48px;
-    height: 40px;
+    height: 45px;
     margin-left: 5px;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: #00483d;
+    font-size: 30px;
+    border-radius:20px;
+    background-image: linear-gradient(#00917a,#00483d);
     color: white;
+    border: none;
 }
 
 .kt-dh{
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
-    width: 110px;
+    width: 120px;
     background-color: #00483d;
     color:white;
     text-decoration: none;
@@ -72,8 +63,9 @@ header{
     width: 70px;
     
 }
-.kt-dh i{
+.kt-dh svg{
     display: block;
+    font-size: 25px;
 }
 .card{
     display: flex;
@@ -96,22 +88,89 @@ header{
     font-size: 14px;
     padding: 5px 10px;
 }
+
+
 nav{
     display: flex;
     align-content: center;
     background-color: #00483d;
+    border-radius: 5px;
+    position: relative;
 }
 .nav-item{
     padding:10px;
     background-color: transparent;
     border-right: 1px solid #b6b6b6 ;
     color: white;
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .container{
   display: flex;
-  width: 1050px;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 10px auto ;
-} */
+  margin: 10px auto;
+}
+
+.clrcrs{
+    clear: both;
+}
+
+
+
+
+
+/* drop **************************************/
+.nav-group section{
+    display: none;
+}
+.nav-group:hover section{
+    display: block;
+}
+.nav-supper{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 199;
+    padding: 15px 0;
+    display: block;
+    opacity: 1;
+    -webkit-transition: opacity 200ms,visibility 200ms;
+    transition: opacity 200ms,visibility 200ms;
+    width: 1200px;
+    background-color: #ffffff;
+    
+}
+.nav-area{
+    z-index: 1;
+    
+    
+}
+.header-path{
+    color: #00483d;
+    display: inline-block;
+    margin:  10px 0;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.nav-path{
+    margin-bottom: 10px;
+}
+.ul-nav-path{
+    margin:0;
+    padding:0 0 0 20px;
+    display: flex;
+}
+.ul-nav-path li{
+    list-style-type: none;
+}
+.a-nav-path{
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.ul-nav-path li:hover{
+    color:#007664;
+    cursor: pointer;
+}
